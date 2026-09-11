@@ -2,6 +2,8 @@ package CrashCourse;
 // If your Java file isn't running, you *might* need to add the following line and uncomment it, at the top of your file: 
 // package CrashCourse (the name of the folder that includes CrashCourse.java)
 
+import java.util.ArrayList;
+
 public class CrashCourse {     // class header. Always PascalCase. 
 
     public static void main(String[] args) {
@@ -98,8 +100,86 @@ public class CrashCourse {     // class header. Always PascalCase.
         System.out.println("Rows: " + arryGrid1.length);
         System.out.println("Columns: " + arryGrid1[0].length);
 
+        int[][] arryGrid2 = { {7,8,9}, {4,5,6}, {1,2,3}};
+
+        System.out.println(arryGrid2[0][1]); //access number 8
+        System.out.println(arryGrid2[2][2]); //access number 3
+
+        //ARRAYLISTS
+        // Cam ne amy size, lots of built in functions to help
+        // Avoid primitive data types. Special classes for integer, double, Bolean, String. Called 'wrapper'
+
+        ArrayList<String> arryLst = new ArrayList<>();
+
+        arryLst.add("Word 1");
+        arryLst.add("Word 2");
+        arryLst.add("Word 3");
+        arryLst.remove(0);
+        arryLst.add(0, "Word 4");
+        arryLst.add(1, "Word 5");
+
+        // Math Class
+        Math.max(5, 6); // 6
+        Math.min(5, 6); // 5
+        Math.sqrt(144); // 12
+        Math.abs(-67); // 67
+
+        // condiments
+
+        // if    else if    else
+
+            boolean tru = true;
+            boolean fal = false;
+
+        if(tru) {
+            System.out.println("reached first condition");
+        } else if(!fal) {
+            System.out.println("second condition");
+        }
+        else {
+            System.out.println("reached else");
+        }
+        
+        int x = 5;
+
+        while(x < 10) {
+            System.out.println(x + " ");
+            x++;
+        }
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Bird");
+        System.out.println("ArrayList: " + animals);
+
+        for (String s : animals) {
+            System.out.println("We saw "+s);
+        }
+
+        //pritning values of an array with interation
+
+        double[] arry = {1.2, 3.4, 5.6, 7.8};
+        for (int i = 0; i < arry.length; i++) {
+            System.out.println(arry[i]);
+        }
+
+        int[][] arryMatrix = { {1,2,3}, {4,5,6}, {7,8,9} };
+        for (int i = 0; i < arryMatrix.length; i++) {
+            for (int j = 0; j < arryMatrix[i].length; j++) {
+                System.out.print(arryMatrix[i][j] + " ");
+            }
+            System.out.println(); // Move to the next line after each row
+        }
 
 
 
+
+
+
+    }
+
+    private static String e(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'e'");
     }
 }
