@@ -8,7 +8,7 @@ public class Dog {
     double weight;
     boolean isHungry;
     boolean isHome;
-    int energylevel;
+    int energyLevel;
 
     // constrcutor
 
@@ -34,11 +34,11 @@ public class Dog {
     }
 
     public void scratch() {
-        System.out.println("i made a mess! clean up after me")
+        System.out.println("i made a mess! clean up after me");
     }
 
     public void bite() {
-        System.out.println("i just bit you oooooo ahah prolly all  scratched up now huh")
+        System.out.println("i just bit you oooooo ahah prolly all  scratched up now huh");
     }
 
 }
