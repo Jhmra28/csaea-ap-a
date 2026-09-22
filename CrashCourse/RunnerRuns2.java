@@ -25,7 +25,7 @@ public class RunnerRuns2 {
         raceWins++;
         isRacing = false;
 
-        System.out.println(runnerName + " has won " + raceName);
+        System.out.println(runnerName + " has won the " + raceName);
         }
 
     public void getOlder() {
