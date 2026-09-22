@@ -2,7 +2,7 @@ public class RunnerRuns2 {
     
     //varaibles
     private String runnerName;
-    private boolean isRacing;
+    private boolean isRacing = false;
     private double runTime;
     private double runLength;
     private int runnerAge;
@@ -10,7 +10,7 @@ public class RunnerRuns2 {
     private String raceName;
     private String raceDate;
     private int raceWins = 0;
-    private int personalBest;
+    private double personalBest;
 
     // constrcutor
 
@@ -25,13 +25,14 @@ public class RunnerRuns2 {
         raceWins++;
         isRacing = false;
 
-        System.out.println(runnerName + " has won" + raceName);
+        System.out.println(runnerName + " has won " + raceName);
         }
 
     public void getOlder() {
         runnerAge++;
         runnerYear++;
 
+        System.out.println(runnerName + " is now " + runnerAge + " years old, and is in " + runnerYear + "th grade!")
 
     }
 
@@ -55,7 +56,7 @@ public class RunnerRuns2 {
             personalBest = personalBest;
         }
 
-        System.out.println(runnerName + ' has finished  in ' + runTime + "minutes");
+        System.out.println(runnerName + " has finished in " + runTime + "minutes");
 
 }
 
@@ -70,4 +71,5 @@ public class RunnerRuns2 {
     public void setRunLength(double distance) {
         runLength = distance;
     }
+    
 }
