@@ -28,6 +28,7 @@ public class Dog {
         if(energyLevel > 100){
             energyLevel = 100;
         }
+    }
 
     public void bark() {
         System.out.println("Woof!");

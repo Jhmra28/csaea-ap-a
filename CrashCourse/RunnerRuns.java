@@ -27,7 +27,7 @@ public class RunnerRuns {
 
     public void getOlder() {
         runnerAge++;
-        runnerYear++
+        runnerYear++;
     }
 
     public void best() {
@@ -43,3 +43,4 @@ public class RunnerRuns {
         this.raceName = raceName;
         this.raceDate = raceDate;
     }
+}
