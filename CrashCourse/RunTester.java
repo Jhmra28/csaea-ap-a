@@ -10,11 +10,11 @@ public class RunTester {
 
         arben.upcomingRace("Fox Trot 5k", "9/26/26");
         arben.winRace();
-        arben.completeRace(926.2)
+        arben.completeRace(926.2);
         arben.best(54.2);
         arben.getOlder();
         arben.setRunLength(5.0);
-        
+
 
 
 
