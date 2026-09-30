@@ -37,14 +37,16 @@ public class Bush {
                 + "\nAge: " + this.age);
     }
 
-    public void setFruitPerSeason(int fruit)
+    public int setFruitPerSeason(int fruit)
     {
         this.fruitPerSeason = fruit;
+        return fruit;
     }
 
-    public void setFruitCost(double cost)
+    public double setFruitCost(double cost)
     {
         this.fruitCost = cost;
+        return cost;
     }
 
     public void getOlder() {
